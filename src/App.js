@@ -53,12 +53,12 @@ function App() {
         <div className="App">
             <div className={"App-header"} style={{padding:"30px"}}>
                 <div style={{maxWidth:"800px",textAlign:"justify"}}>
-                    <h1>Semillero de ciencias</h1>
+                    <h2>Semillero de ciencias</h2>
                     <p style={{fontStyle:"italic", textAlign:"center"}}>
                         "No sé qué podré parecerle yo al mundo, pero tengo para mí que no he sido sino un muchacho que juega a la orilla del mar, que se distrae de cuando en cuando al encontrar un guijarro más liso o una concha más bella que las habituales, mientras el gran océano de la verdad se extiende ante mí aún por descubrir. Isaac Newton"</p>
-                    <h3>Laboratorio #1. Caída libre y tratamiento de datos experimentales</h3>
+                    <h4 style={{textAlign:"left"}}>Laboratorio #1. Caída libre y tratamiento de datos experimentales</h4>
                     <p> <strong>Palabras clave: </strong>Caída libre, gravedad, masa, peso. </p>
-                    <h3>Introducción</h3>
+                    <h4>Introducción</h4>
                     <p>Se denomina caída libre al movimiento de un cuerpo bajo la acción exclusiva de un campo gravitatorio.</p>
                     <h4>Gravedad</h4>
                     <p>Los objetos con masa se atraen de forma natural, a esta fuerza la conocemos como la gravedad. Su intensidad depende de la cantidad de masa que tienen los objetos.</p>
