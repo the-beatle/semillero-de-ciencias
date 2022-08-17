@@ -2,6 +2,11 @@ import './App.css';
 import YoutubeEmbed from "./YoutubeEmbed";
 import ScatterPlot from "./Scatter";
 import React, {useMemo} from "react";
+import uno from './1.jpeg';
+import dos from './2.jpeg';
+import tres from './3.jpeg';
+import cuatro from './4.jpeg';
+import cinco from './5.jpeg';
 
 function debounce(fn, ms) {
     let timer
@@ -47,51 +52,83 @@ function App() {
     return (
         <div className="App">
             <div className={"App-header"} style={{padding:"30px"}}>
-                <div style={{maxWidth:"800px"}}>
+                <div style={{maxWidth:"800px",textAlign:"justify"}}>
                     <h1>Semillero de ciencias</h1>
+                    <p style={{fontStyle:"italic", textAlign:"center"}}>
+                        "No sé qué podré parecerle yo al mundo, pero tengo para mí que no he sido sino un muchacho que juega a la orilla del mar, que se distrae de cuando en cuando al encontrar un guijarro más liso o una concha más bella que las habituales, mientras el gran océano de la verdad se extiende ante mí aún por descubrir. Isaac Newton"</p>
+                    <h3>Laboratorio #1. Caída libre y tratamiento de datos experimentales</h3>
+                    <p> <strong>Palabras clave: </strong>Caída libre, gravedad, masa, peso. </p>
+                    <h3>Introducción</h3>
+                    <p>Se denomina caída libre al movimiento de un cuerpo bajo la acción exclusiva de un campo gravitatorio.</p>
+                    <h4>Gravedad</h4>
+                    <p>Los objetos con masa se atraen de forma natural, a esta fuerza la conocemos como la gravedad. Su intensidad depende de la cantidad de masa que tienen los objetos.</p>
 
-                    <h2>Caída libre y tratamiento de datos experimentales</h2>
-                    <h3>Introducción al tratamiento de datos experimentales</h3>
-                    <p>Los datos experimentales son producidos por la medición, método de ensayo o diseño experimental. La medida experimental es la base del conocimiento científico. Midiendo podemos comprobar las hipótesis o teorías científicas.
-
-                    </p>
-                    <h4>Representación gráfica de los datos medidos por los científicos</h4>
-                    <ScatterPlot/>
-                    <h4>¿Qué es un error de medición?</h4>
-                    <p>Diferencia del resultado calculado con respecto al resultado verdadero (medido)</p>
+                    <YoutubeEmbed embedId={"1sj2otIjZfM"} height={videoHeight}/>
+                    <YoutubeEmbed embedId={"x2bfH3wGswo"} height={videoHeight}/>
                     <h4>
                         ¿Qué es la masa de un objeto?
                     </h4>
-                    <p>La masa es la cantidad de materia que tienen los cuerpos. Se mide con una balanza o pesa (como le llamamos comunmente)</p>
+                    <p>La masa es la cantidad de materia que tienen los cuerpos. Se mide con una báscula o pesa (como le llamamos comunmente)</p>
                     <YoutubeEmbed embedId={"26-Cy2nT0lI"} height={videoHeight}/>
                     <CustomImage src={url3}/>
                     <h4>
                         ¿Qué es el peso de un objeto?
                     </h4>
                     <p>
-                        El peso mide qué tan fuerte la gravidad atrae la masa de un cuerpo. Generalmente se mide en Newtons.
+                        El peso mide qué tan fuerte la gravedad atrae la masa de un cuerpo. Generalmente se mide en Newtons.
                     </p>
                     <YoutubeEmbed embedId={"jy5UDtRmbEA"} height={videoHeight}/>
-                    <h4>Gravedad</h4>
-                    <p>La fuerza de gravedad en la tierra y los objetos se atraen y esta atracción es una fuerza. Su intensidad depende de la cantidad de masa que tienen los objetos.</p>
+                    <h4>
+                        Caída libre
+                    </h4>
 
-                    <YoutubeEmbed embedId={"1sj2otIjZfM"} height={videoHeight}/>
-                    <YoutubeEmbed embedId={"x2bfH3wGswo"} height={videoHeight}/>
+                    <YoutubeEmbed embedId={"35geCfUIGgc"} height={videoHeight}/>
+
+                    <p>El filósofo griego <strong>Aristóteles (384-322) aC</strong> Asumió que los objetos más pesados caían más rápido que los más ligeros.</p>
+
+                        <p> Dos mil años después, <strong>Galileo Galilei</strong> demostró que en realidad todos los objetos caen al mismo tiempo sin importar el peso de estos</p>
+
+                    <h3>Diseño experimental de Galileo</h3>
+                    <CustomImage src={url2}/>
+                    <YoutubeEmbed embedId={"ZBr8Q2ROX9s"} height={videoHeight}/>
+
+                    <p>En esa época era muy difícil medir con precisión el tiempo que tarda un objeto en caer en una distancia vertical (como lo observamos en el experimento). Galileo se dio cuenta de que el movimiento de un objeto en caída libre era equivalente al movimiento de una esfera rodando por un plano inclinado. </p>
 
                     <h4>
-                        ¿Qué sucede si lanzamos varios objetos de diferente masa desde la misma altura?, ¿Qué se pudo observar en el ejercicio de toma de datos experimentales?
+                        Experimento moderno de caida libre sin resistencia del aire
                     </h4>
                     <YoutubeEmbed embedId="xzkgJUBS2tM" height={videoHeight}/>
 
+                    <h4>Introducción al tratamiento de datos experimentales</h4>
+                    <p>Los datos experimentales son producidos por la medición, método de ensayo o diseño experimental. La medida experimental es la base del conocimiento científico. Midiendo podemos comprobar las hipótesis o teorías científicas.
+                    </p>
 
-                    <h4>
-                        Investiga quién fue Newton, Galileo Galiley y Aristóteles, y cuáles fueron sus aportes a la física          </h4>
+                    <h4>Materiales</h4>
+                    <p>Báscula, objetos con diferentes peso, cronómetro y mucha creatividad!</p>
+                    <h4>Metodología</h4>
+                    <ol>
+                        <li>Se obtiene la masa del objeto usando una báscula digital. </li>
+                        <li>De ser posible, se mide la altura a la cual el objeto va a ser lanzado.</li>
+                        <li>Se deja caer el objeto y se inicia el conteo del tiempo usando el cronómetro (puede ser el cronómetro del celular).</li>
+                        <li>Se toma el tiempo en el momento justo cuando el objeto toca el suelo.</li>
+                        <li>Se registran los valores en una tabla cuyas columnas son, descripción del objeto, masa en gramos, altura a la cual fue lanzado en metros, y el tiempo que tardó el objeto en caer en segundos.</li>
+                    </ol>
+                    <h3>Resultados</h3>
+                    <p>
+                        La siguiente gráfica muestra los resultados del experimento de caída libre realizado por los científicos del Colegio Católico. En esta parte de la práctica, se registraron los tiempos que tardaron en caer, objetos de diferente masa desde un segundo piso.
+                    </p>
+                    <h4>Representación gráfica de los datos medidos por los científicos</h4>
+                    <ScatterPlot/>
+                    <p>Reúnete con tus compañeros de equipo y intenta calcular la altura a la cuál fueron arrojados los objetos. Utiliza la fórmula de Newton para caida libre,
+                        <strong>h = g.t<sup>2</sup></strong>, donde h representa la altura del segundo piso, g representa la constante de gravedad <strong>9.8 m/s<sup>2</sup></strong> y t el tiempo.</p>
 
-                    <p>El filósofo griego <strong>Aristóteles (384-322) aC</strong> Asumió que los objetos más pesados caían más rápido que los más ligeros. Dos mil años después, <strong>Galileo Galilei</strong> demostró que en realidad todos los objetos caen al mismo tiempo sin importar el peso de estos</p>
-                    <CustomImage src={url}/>
-                    <p>En esa época era muy difícil medir con presición el tiempo que tarda un objeto en caer en una distancia vertical (como lo observamos en el experimento). Galileo se dio cuenta de que el movimiento de un objeto en caída libre era equivalente al mooiento de una esfera rodando por un plano inclinado. </p>
-                    <CustomImage src={url2}/>
-                    <YoutubeEmbed embedId={"ZBr8Q2ROX9s"} height={videoHeight}/>
+                    <h4>Registro fotográfico</h4>
+                    <CustomImage src={uno}/>
+                    <CustomImage src={dos}/>
+                    <CustomImage src={tres}/>
+                    <CustomImage src={cuatro}/>
+                    <CustomImage src={cinco}/>
+                    <h4 style={{fontStyle:"italic"}}>Lo hicieron muy bien científicos, felicitaciones!</h4>
                 </div>
             </div>
         </div>
