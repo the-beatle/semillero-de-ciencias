@@ -14,7 +14,7 @@ import Electricity from "./pages/physics/electricity";
 const Home = () => {
     return (
         <div>
-            <h1>Semillero de ciencias y naturaleza</h1>
+            <h1>Semillero de Ciencias y Naturaleza</h1>
             <Layout/>
         </div>
     )
