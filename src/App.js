@@ -27,7 +27,7 @@ const Layout = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/fisica-mecanica">Fisica Mecánica</Link>
+                        <Link to="/fisica-mecanica">Física Mecánica</Link>
                     </li>
                     <li>
                         <Link to="/mecanica-de-fluidos">Mecánica de fluidos</Link>

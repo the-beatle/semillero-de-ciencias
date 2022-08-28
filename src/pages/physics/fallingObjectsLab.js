@@ -48,15 +48,21 @@ function FallingObjectsLab() {
             <h4>Introducción</h4>
             <p>Se denomina caída libre al movimiento de un cuerpo bajo la acción exclusiva de un campo gravitatorio.</p>
             <h4>Gravedad</h4>
-            <p>Los objetos con masa se atraen de forma natural, a esta fuerza la conocemos como la gravedad. Su intensidad depende de la cantidad de masa que tienen los objetos.</p>
+            <p>Los objetos con masa se atraen de forma natural, a este efecto se le conoce como la gravedad. Su intensidad depende de la cantidad de masa que tienen los objetos.</p>
+            <h4>Ejemplo #1:</h4><p>En este video se puede observar claramente cómo la luna gira al rededor de la tierra y a su vez la tierra gira al rededor del sol por el efecto de gravitacional.
+            </p>
 
             <YoutubeEmbed embedId={"1sj2otIjZfM"} height={videoHeight}/>
+            <h4>Ejemplo #2:</h4><p>Aquí podemos observar como el sol y los planetas que lo orbitan y también giran al rededor de cuerpos con mayor gravedad, como los agujeros negros.</p>
+        
+            
             <YoutubeEmbed embedId={"x2bfH3wGswo"} height={videoHeight}/>
             <h4>
                 ¿Qué es la masa de un objeto?
             </h4>
             <p>La masa es la cantidad de materia que tienen los cuerpos. Se mide con una báscula o pesa (como le llamamos comunmente)</p>
             <YoutubeEmbed embedId={"26-Cy2nT0lI"} height={videoHeight}/>
+            <h4>¿Te has preguntado cuál es tu peso en la luna?</h4> <p>Si tu masa es de 56 kg, tranquio esta no cambia... Pero tu peso si puede cambiar, la gravedad en la luna es menor, por esto en la luna tu peso será menor que en la tierra.</p>
             <CustomImage src={url3}/>
             <h4>
                 ¿Qué es el peso de un objeto?
@@ -67,15 +73,17 @@ function FallingObjectsLab() {
             <YoutubeEmbed embedId={"jy5UDtRmbEA"} height={videoHeight}/>
             <h4>
                 Caída libre
-            </h4>
+            </h4> <p>Este video lo realizaron los científicos del semillero de ciencia y turaleza del colegio Católico la Inmaculada, mientras hacían una recopilación de datos experimentales sobre la altura y tiempo en la caída de los cuerpos, al rededor de la pregunta ¿Cuál objeto cae primero?
+                Observa lo que sucedió: </p>
 
             <YoutubeEmbed embedId={"35geCfUIGgc"} height={videoHeight}/>
 
-            <p>El filósofo griego <strong>Aristóteles (384-322) aC</strong> Asumió que los objetos más pesados caían más rápido que los más ligeros.</p>
+            <p>El filósofo griego <strong>Aristóteles (384-322) a.C</strong> Asumió que los objetos más pesados caían más rápido que los más ligeros.</p>
 
-            <p> Dos mil años después, <strong>Galileo Galilei</strong> demostró que en realidad todos los objetos caen al mismo tiempo sin importar el peso de estos</p>
+            <p> Dos mil años después, <strong>Galileo Galilei</strong> demostró que en realidad todos los objetos caen al mismo tiempo sin importar el peso de estos.
+        </p>
 
-            <h3>Diseño experimental de Galileo</h3>
+            <h3>Diseño experimental de Galileo:</h3>
             <CustomImage src={url2}/>
             <YoutubeEmbed embedId={"ZBr8Q2ROX9s"} height={videoHeight}/>
 
