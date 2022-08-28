@@ -73,7 +73,7 @@ function FallingObjectsLab() {
             <YoutubeEmbed embedId={"jy5UDtRmbEA"} height={videoHeight}/>
             <h4>
                 Caída libre
-            </h4> <p>Este video lo realizaron los científicos del semillero de ciencia y turaleza del coogio Católico la inmaculada, mientras hacían una recopilación de datos experimentales sobre la altura y tiempo en la caída de los cuerpos, al rededor de la pregunta ¿Cuál objeto cae primero?
+            </h4> <p>Este video lo realizaron los científicos del semillero de ciencia y turaleza del colegio Católico la Inmaculada, mientras hacían una recopilación de datos experimentales sobre la altura y tiempo en la caída de los cuerpos, al rededor de la pregunta ¿Cuál objeto cae primero?
                 Observa lo que sucedió: </p>
 
             <YoutubeEmbed embedId={"35geCfUIGgc"} height={videoHeight}/>
