@@ -12,6 +12,8 @@ function FluidMechanics() {
                 "Aquel que lo intentó y no lo consiguió es superior al que ni lo intentó." -Isaac Newton</p>
             <h4 style={{textAlign:"left"}}>Laboratorio #2. Mecánica de fluidos</h4>
             <p>Se le denomina fluido a la materia compuesta por moléculas atraídas entre sí débilmente, de manera que no puede mantener una forma determinada sino que adquiere la del recipiente que lo contiene.</p>
+            <p> En este video podrás ver un poco más sobre los fuidos y su comportamiento</p>
+            <YoutubeEmbed embedId={"G53gvVh230U"} height={videoHeight}/>
             <p> <strong>Palabras clave: </strong>Densidad, masa, velocidad, presión, caudal. </p>
             <h4 style={{textAlign:"left"}}> Densidad:</h4>
             <p > Relación que existe entre la masa de un cuerpo y su volumen. Su fórmula es: <strong>densidad = masa/volumen</strong></p>
