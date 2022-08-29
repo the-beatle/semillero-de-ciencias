@@ -1,5 +1,6 @@
 import React from "react";
 import YoutubeEmbed from "../../components/YoutubeEmbed";
+import SingleChoiceQuiz from "../../components/SingleChoiceQuiz";
 
 
 function FluidMechanics() {
@@ -16,6 +17,10 @@ function FluidMechanics() {
             <p > Relación que existe entre la masa de un cuerpo y su volumen. Su fórmula es: <strong>densidad = masa/volumen</strong></p>
             <p style={{fontSize:"20px"}}> Observa en este video cómo es posible calcular la densidad de los cuerpos:</p>
             <YoutubeEmbed embedId={"sy1_rVAzZBU"} height={videoHeight}/>
+            <div>
+                <h4>Quiz</h4>
+                <SingleChoiceQuiz/>
+            </div>
         </div>
     )
 }
