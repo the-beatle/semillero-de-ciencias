@@ -36,14 +36,7 @@ function FluidMechanics() {
             <p> En este video podrás ver un poco más sobre los fluidos y su comportamiento.</p>
             <YoutubeEmbed embedId={"G53gvVh230U"} height={videoHeight}/>
             <p> <strong>Palabras clave: </strong>Densidad, masa, velocidad, presión, caudal. </p>
-            <h4 style={{textAlign:"left"}}> Densidad:</h4>
-            <p > Relación que existe entre la masa de un cuerpo y su volumen. Su fórmula es: <strong>densidad = masa/volumen</strong></p>
-            <p style={{fontSize:"20px"}}> Observa en este video cómo es posible calcular la densidad de los cuerpos:</p>
-            <YoutubeEmbed embedId={"sy1_rVAzZBU"} height={videoHeight}/>
             <h4>Metodología</h4>
-            <p>
-                Para este laboratorio los científicos deben presentar los materiales requeridos; teniendo en cuenta el correcto uso de cada implemento así: Tome la probeta pésela y registre el dato, li vierta la sustancia y pese (registre el peso obtenido),
-            </p>
             <h4>Propiedades a medir:</h4>
             <ul>
                 {sections.map(({description})=>{
@@ -52,7 +45,16 @@ function FluidMechanics() {
                     )
                 })}
             </ul>
+            <h4 style={{textAlign:"left"}}> Densidad:</h4>
+            <p > Relación que existe entre la masa de un cuerpo y su volumen. Su fórmula es: <strong>densidad = masa/volumen</strong></p>
+            <p style={{fontSize:"20px"}}> Observa en este video cómo es posible calcular la densidad de los cuerpos:</p>
+            <YoutubeEmbed embedId={"sy1_rVAzZBU"} height={videoHeight}/>
+
+
             <h4>Masa, volumen y densidad</h4>
+            <p>
+                Para este laboratorio los científicos deben presentar los materiales requeridos; teniendo en cuenta el correcto uso de cada implemento así: Tome la probeta, pésela y registre el dato, luego vierta la sustancia y pese de nuevo (registre el peso obtenido),
+            </p>
             <h5>Materiales</h5>
             <p>Probeta, jabón de cocina líquido, aceite y agua, roca, tierra, metro</p>
             <Disclaimer text={"¡Querido científico, tu seguridad es siempre lo más importante!. Este experimento debe ser realizado bajo la supervición de un adulto"} />
