@@ -58,7 +58,6 @@ function FluidMechanics() {
             <h5>Materiales</h5>
             <p>Probeta, jabón de cocina líquido, aceite y agua, roca, tierra, metro</p>
             <Disclaimer text={"¡Querido científico, tu seguridad es siempre lo más importante!. Este experimento debe ser realizado bajo la supervición de un adulto"} />
-            <h3>Resultados</h3>
             <ol>
                 <li> Registre el dato del peso de la probeta o el recipiente en gramos.</li>
                 <li>Vierta la sustancia dentro de la probeta y registre el valor de la masa obtenida en gramos.</li>
@@ -71,7 +70,6 @@ function FluidMechanics() {
             <hr/>
             <DensityCalculator/>
             <div>
-                <h4>Quiz</h4>
                 <h5> Mide tus conocimientos</h5>
                 <SingleChoiceQuiz/>
             </div>
@@ -107,9 +105,9 @@ const DensityCalculator = ()=>{
     },[masa,volumen])
 
     return(
-        <div style={{backgroundColor:"#f6f1e9",padding:"10px", width:"100%"}}>
+        <div style={{backgroundColor:"rgba(246,243,218,0.7)",padding:"10px", width:"100%"}}>
             <h4>Calculadora de densidad</h4>
-            <p>Ingresa la masa del objeto en gramos (g) y luego ingresa su volumen en <strong><Latex>{"$$cm^3$$"}</Latex></strong></p>
+            <p>Ingresa la masa del objeto en gramos (g) y luego ingresa su volumen en centímetros cúbicos <strong><Latex>{"$$(cm^3)$$"}</Latex></strong></p>
             <p>
                 <label>Masa: </label>
                 <input
