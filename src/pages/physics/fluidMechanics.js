@@ -22,6 +22,7 @@ function FluidMechanics() {
             <YoutubeEmbed embedId={"sy1_rVAzZBU"} height={videoHeight}/>
             <div>
                 <h4>Quiz</h4>
+                <h5> Mide tus conocimientos</h5>
                 <SingleChoiceQuiz/>
             </div>
         </div>
