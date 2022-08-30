@@ -29,3 +29,5 @@ yarn-error.log*
 .env.build
 .vercel
 yarn.lock
+
+*.swp
