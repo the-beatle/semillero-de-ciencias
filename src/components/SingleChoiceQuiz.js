@@ -56,17 +56,6 @@ const SingleChoiceQuiz = ({src})=>{
                 {id: 4, text: "El objeto A tiene igual masa que el objeto B", isTheAnswer: false, why: ""},
             ]
         },
-        {
-            id:"5",
-            text:" El objeto A tiene la misma masa que el objeto B. Según esta afirmación, encuentre la respuesta verdadera",
-            type: "single-choice",
-            choices: [
-                {id: 1, text: "El objeto A tiene mayor densidad que el objeto B", isTheAnswer:false, why: ""},
-                {id: 2, text: "El objeto B tiene diferente volumen que el objeto A", isTheAnswer: false, why: ""},
-                {id: 3, text: "No es posible determinar si el objeto A tiene mayor densidad que el objeto B", isTheAnswer: true, why: ""},
-                {id: 4, text: "El objeto A tiene igual masa que el objeto B", isTheAnswer: false, why: ""},
-            ]
-        }
     ]
     return(
         <div>
