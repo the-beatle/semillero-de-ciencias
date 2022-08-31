@@ -115,7 +115,7 @@ const DensityCalculator = ()=>{
     useEffect(()=>{
         let nuevaDensidad =  masa/volumen
 
-        setDensidad(nuevaDensidad.toFixed(1))
+        setDensidad(nuevaDensidad.toFixed(2))
     },[masa,volumen])
 
     return(
