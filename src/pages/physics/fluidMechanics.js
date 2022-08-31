@@ -1,13 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import YoutubeEmbed from "../../components/YoutubeEmbed";
 import SingleChoiceQuiz from "../../components/SingleChoiceQuiz";
 import Latex from "react-latex"
+import BarPlot from "../../components/barPlot";
 
 function FluidMechanics() {
     const [ masa, setMasa] = useState(null)
     const [ volumen, setVolumen] = useState(null)
     const [densidad, setDensidad] = useState(null)
-    const ecuacionDeDensidad = `$$Densidad = \\frac{Masa}{Volumen}$$`
+    const ecuacionDeDensidad = `$$Densidad = masa/volumen$$`
 
     const videoHeight  = "400px"
     const sections = [
@@ -15,11 +16,12 @@ function FluidMechanics() {
         {name: "presion", description: "Presión"},
         {name: "distancia", description: "Distancia"},
         {name: "densidad", description: "Densidad"},
-        {name: "peso", description: "Peso"},
+        {name: "masa", description: "Peso"},
         {name: "presion_atmosferica", description: "Presión atmosférica"},
         {name: "tiempo", description: "Tiempo"},
         {name: "tension_superficial", description: "Tensión Superficial"},
         {name: "velocidad", description: "Velocidad"},
+        {name: "caudal", description: "Caudal"}
     ]
     useEffect(()=>{
         setDensidad(masa/volumen)
@@ -29,35 +31,42 @@ function FluidMechanics() {
         <div style={{maxWidth:"800px",textAlign:"justify"}}>
             <h2>Semillero de ciencias</h2>
             <p style={{fontStyle:"italic", textAlign:"center"}}>
-                "Aquel que lo intentó y no lo consiguió es superior al que ni lo intentó." -Isaac Newton</p>
-            <h4 style={{textAlign:"center"}}>Laboratorio #2</h4>
+                "Eureka!" -Arquímedes</p>
             <h4 style={{textAlign:"left"}}> Mecánica de fluidos:</h4>
-            <p>Se le denomina fluido a la materia compuesta por moléculas atraídas entre sí débilmente, de manera que no puede mantener una forma determinada sino que adquiere la del recipiente que lo contiene.</p>
-            <p> En este video podrás ver un poco más sobre los fluidos y su comportamiento.</p>
+            <p>
+                Un fluido es una sustancia que puede escurrir fácilmente y que puede cambiar de forma debido a la acción de pequeñas fuerzas. Por lo tanto, el término fluido incluye a los líquidos y a los gases.</p>
             <YoutubeEmbed embedId={"G53gvVh230U"} height={videoHeight}/>
-            <p> <strong>Palabras clave: </strong>Densidad, masa, velocidad, presión, caudal. </p>
-            <h4>Metodología</h4>
-            <h4>Propiedades a medir:</h4>
-            <ul>
+            <p>
+                <strong>Palabras clave: </strong>
                 {sections.map(({description})=>{
                     return(
-                        <li>{description}</li>
+                        <span>{description.toLowerCase()+", "}</span>
                     )
                 })}
-            </ul>
-            <h4 style={{textAlign:"left"}}> Densidad:</h4>
-            <p > Relación que existe entre la masa de un cuerpo y su volumen. Su fórmula es: <strong>densidad = masa/volumen</strong></p>
-            <p style={{fontSize:"20px"}}> Observa en este video cómo es posible calcular la densidad de los cuerpos:</p>
-            <YoutubeEmbed embedId={"sy1_rVAzZBU"} height={videoHeight}/>
+            </p>
+
+            <h4 style={{textAlign:"center"}}>Laboratorio #2</h4>
 
 
             <h4>Masa, volumen y densidad</h4>
+            <h4 style={{textAlign:"left"}}> Densidad:</h4>
+            <p > Relación que existe entre la masa de un cuerpo y su volumen.</p>
+            <Latex>
+                {ecuacionDeDensidad}
+            </Latex>
+            <p style={{fontSize:"20px"}}> Observa en este video cómo es posible calcular la densidad de los cuerpos:</p>
+            <YoutubeEmbed embedId={"sy1_rVAzZBU"} height={videoHeight}/>
+            <h4>Metodología</h4>
             <p>
-                Para este laboratorio los científicos deben presentar los materiales requeridos; teniendo en cuenta el correcto uso de cada implemento así: Tome la probeta, pésela y registre el dato, luego vierta la sustancia y pese de nuevo (registre el peso obtenido),
+                <li>Jabón Líquido</li>
+                <li>Agua</li>
+                <li>Roca</li>
+                <li>Suelo</li>
             </p>
             <h5>Materiales</h5>
-            <p>Probeta, jabón de cocina líquido, aceite y agua, roca, tierra, metro</p>
-            <Disclaimer text={"¡Querido científico, tu seguridad es siempre lo más importante!. Este experimento debe ser realizado bajo la supervición de un adulto"} />
+            <p>Probeta o recipiente, jabón de cocina líquido, aceite ,agua, roca, suelo.</p>
+            <Disclaimer text={"¡Tu seguridad es siempre lo más importante!. Este experimento debe ser realizado bajo la supervición de un adulto"} />
+            <h5>Cómo calcular la densidad del agua, el jabón líquido y el suelo?</h5>
             <ol>
                 <li> Registre el dato del peso de la probeta o el recipiente en gramos.</li>
                 <li>Vierta la sustancia dentro de la probeta y registre el valor de la masa obtenida en gramos.</li>
@@ -67,8 +76,13 @@ function FluidMechanics() {
             <Latex>
                 {ecuacionDeDensidad}
             </Latex>
+            <h5 style={{fontStyle:"italic",color:"green"}}>Cómo calcular el volumen de la roca?</h5>
+            <p style={{fontStyle:"italic"}}>Discute con tus compañero y tu asesor, cuál es la mejor forma de calcular el volumen cuando el objeto es un sólido irregular.</p>
+
             <hr/>
             <DensityCalculator/>
+            <h4>Resultados</h4>
+            <DensityResults/>
             <div>
                 <h5> Mide tus conocimientos</h5>
                 <SingleChoiceQuiz/>
@@ -82,7 +96,7 @@ export default FluidMechanics;
 
 const Disclaimer = ({text})=>{
     return(
-        <div style={{padding:"10px",background: "#c1eeee"}}>
+        <div style={{padding:"10px",background: "#c1eeee", fontStyle:"italic", fontSize:"medium"}}>
             {text}
         </div>
     )
@@ -127,11 +141,71 @@ const DensityCalculator = ()=>{
         <div style={{backgroundColor:"#e3f3fc", padding:"10px"}}>
             <p>
                 <Latex>
-                    {`$$Densidad = \\frac{Masa}{Volumen} = \\frac{${masa||""}}{${volumen||""}} \\frac{g}{cm^3} = ${!densidad || isNaN(densidad)?"":densidad}  \\frac{g}{cm^3} $$`}
+                    {`$$Densidad = D = \\frac{Masa}{Volumen}$$`}
+                </Latex>
+                <br/>
+                <br/>
+                <Latex>
+                    {`$$D =  \\frac{${masa||""}}{${volumen||""}} \\frac{g}{cm^3} $$`}
+                </Latex>
+                <br/>
+                <br/>
+                <Latex>
+                    {`$$D =   ${!densidad || isNaN(densidad)?"":densidad}  \\frac{g}{cm^3} $$`}
                 </Latex>
             </p>
         </div>
+        </div>
+    )
+}
 
+const DensityResults = ()=> {
+    const [jabonLiquido, setJabonLiquido] = useState(0)
+    const [agua,setAgua] = useState(0)
+    const [roca,setRoca] = useState(0)
+    const [suelo,setSuelo] = useState(0)
+
+    const series = useMemo(()=>{
+        return [{
+            data: [jabonLiquido, agua, roca, suelo]
+        }]
+    },[jabonLiquido,agua,roca,suelo])
+
+    return (
+        <div>
+            <p>
+                <label>Agua: </label>
+                <input
+                    placeholder={"(g/cm3)"}
+                    onChange={(e)=>setAgua(e.target.value)}
+                    type={"number"}
+                />
+            </p>
+            <p>
+                <label>Jabón Líquido: </label>
+                <input
+                    placeholder={"(g/cm3)"}
+                    onChange={(e)=>setJabonLiquido(e.target.value)}
+                    type={"number"}
+                />
+            </p>
+            <p>
+                <label>Suelo: </label>
+                <input
+                    placeholder={"(g/cm3)"}
+                    onChange={(e)=>setSuelo(e.target.value)}
+                    type={"number"}
+                />
+            </p>
+            <p>
+                <label>Roca: </label>
+                <input
+                    placeholder={"(g/cm3)"}
+                    onChange={(e)=>setRoca(e.target.value)}
+                    type={"number"}
+                />
+            </p>
+            <BarPlot series = {series}/>
         </div>
     )
 }
