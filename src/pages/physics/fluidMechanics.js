@@ -71,7 +71,7 @@ function FluidMechanics() {
                 <li> Registre el dato del peso de la probeta o el recipiente en gramos.</li>
                 <li>Vierta la sustancia dentro de la probeta y registre el valor de la masa obtenida en gramos.</li>
                 <li>Utilizando la regla que aparece en la probeta, registre el valor del volumen obtenido de la sustancia en centímetros cúbicos.</li>
-                <li>Calcule la densidad del fluido con la fórmula</li>
+                <li>Calcule la densidad del fluido. Para calcular la masa es necesario restar el valor de la probeta o el recipiente. Use la fórmula.</li>
             </ol>
             <Latex>
                 {ecuacionDeDensidad}
@@ -115,7 +115,7 @@ const DensityCalculator = ()=>{
     useEffect(()=>{
         let nuevaDensidad =  masa/volumen
 
-        setDensidad(nuevaDensidad.toFixed(3))
+        setDensidad(nuevaDensidad.toFixed(1))
     },[masa,volumen])
 
     return(
