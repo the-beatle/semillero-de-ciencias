@@ -42,7 +42,7 @@ function FallingObjectsLab() {
         <div style={{maxWidth:"800px",textAlign:"justify"}}>
             <h2>Semillero de ciencias</h2>
             <p style={{fontStyle:"italic", textAlign:"center"}}>
-                "No sé qué podré parecerle yo al mundo, pero tengo para mí que no he sido sino un muchacho que juega a la orilla del mar, que se distrae de cuando en cuando al encontrar un guijarro más liso o una concha más bella que las habituales, mientras el gran océano de la verdad se extiende ante mí aún por descubrir. Isaac Newton"</p>
+                "No sé qué podré parecerle yo al mundo, <br/> pero tengo para mí que no he sido sino un muchacho que juega a la orilla del mar,<br/> que se distrae de cuando en cuando <br/> al encontrar un guijarro más liso <br/> o una concha más bella que las habituales, <br/> mientras el gran océano de la verdad se extiende ante mí aún por descubrir." <br/> <cite> Isaac Newton </cite> </p>
             <h4 style={{textAlign:"left"}}>Laboratorio #1. Caída libre y tratamiento de datos experimentales</h4>
             <p> <strong>Palabras clave: </strong>Caída libre, gravedad, masa, peso. </p>
             <h4>Introducción</h4>
