@@ -68,7 +68,7 @@ function FallingObjectsLab() {
                 ¿Qué es el peso de un objeto?
             </h4>
             <p>
-                El peso mide qué tan fuertMee la gravedad atrae la masa de un cuerpo. Generalmente se mide en Newtons.
+                El peso mide qué tan fuerte la gravedad atrae la masa de un cuerpo. Generalmente se mide en Newtons.
             </p>
             <YoutubeEmbed embedId={"jy5UDtRmbEA"} height={videoHeight}/>
             <h4>
