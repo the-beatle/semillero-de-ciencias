@@ -110,7 +110,7 @@ function FallingObjectsLab() {
             </ol>
             <h3>Resultados</h3>
             <p>
-                La siguiente gráfica muestra los resultados del experimento de caída libre realizado por los científicos del Colegio Católico. En esta parte de la práctica, se registraron los tiempos que tardaron en caer, objetos de diferente masa desde un segundo piso.
+                La siguiente gráfica muestra los resultados del experimento de caída libre realizado por los científicos del Colegio Católico. En esta parte de la práctica, se registraron los tiempos que tardaron en caer objetos de diferente masa desde un segundo piso.
             </p>
             <h4>Representación gráfica de los datos medidos por los científicos</h4>
             <ScatterPlot/>
