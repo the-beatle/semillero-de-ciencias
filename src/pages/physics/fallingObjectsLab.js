@@ -1,5 +1,5 @@
 import React, {useMemo} from "react";
-import uno from '../../media/images/1.jpeg';
+import uno from '../../media/images/1.jpneg';
 import dos from '../../media/images/2.jpeg';
 import tres from '../../media/images/3.jpeg';
 import cuatro from '../../media/images/4.jpeg';
@@ -40,23 +40,23 @@ function FallingObjectsLab() {
 
     return (
         <div style={{maxWidth:"800px",textAlign:"justify"}}>
-            <h2>Semillero de ciencias style={{textAlign:"center"}}</h2>
+            <h2>Física mecánica style={{textAlign:"center"}}</h2>
             <p style={{fontStyle:"italic", textAlign:"center"}}>
                 "No sé qué podré parecerle yo al mundo, <br/> pero tengo para mí que no he sido sino un muchacho que juega a la orilla del mar,<br/> que se distrae de cuando en cuando <br/> al encontrar un guijarro más liso <br/> o una concha más bella que las habituales, <br/> mientras el gran océano de la verdad se extiende ante mí aún por descubrir." <br/> <cite> Isaac Newton </cite> </p>
-            <h4 style={{textAlign:"left"}}>Laboratorio #1. Caída libre y tratamiento de datos experimentales</h4>
-            <p> <strong>Palabras clave: </strong>Caída libre, gravedad, masa, peso. </p>
+            <h4 style={{textAlign:"left"}}> <li>Laboratorio #1.</li> Caída libre y tratamiento de datos experimentales</h4>
+            <h4> <strong>Palabras clave: </strong>Caída libre, gravedad, masa, peso. </h4>
             <h4>Introducción</h4>
             <p>Se denomina caída libre al movimiento de un cuerpo bajo la acción exclusiva de un campo gravitatorio.</p>
             <h4>Gravedad</h4>
             <p>Los objetos con masa se atraen de forma natural, a este efecto se le conoce como la gravedad. Su intensidad depende de la cantidad de masa que tienen los objetos.</p>
-            <h4>Ejemplo #1:</h4><p>En este video se puede observar claramente cómo la luna gira al rededor de la tierra y a su vez la tierra gira al rededor del sol por el efecto de gravitacional.
+            <li>Ejemplo:</li><p>En este video se puede observar claramente cómo la luna gira al rededor de la tierra y a su vez la tierra gira al rededor del sol por el efecto de gravitacional.
             </p>
 
-            <YoutubeEmbed embedId={"1sj2otIjZfM"} height={videoHeight}/>
-            <h4>Ejemplo #2:</h4><p>Aquí podemos observar como el sol y los planetas que lo orbitan y también giran al rededor de cuerpos con mayor gravedad, como los agujeros negros.</p>
+            <video embedId={"1sj2otIjZfM"} height={videoHeight}> </video>
+            <li>Ejemplo #2:</li><p>Aquí podemos observar como el sol y los planetas que lo orbitan y también giran al rededor de cuerpos con mayor gravedad, como los agujeros negros.</p>
         
             
-            <YoutubeEmbed embedId={"x2bfH3wGswo"} height={videoHeight}/>
+            <video embedId={"x2bfH3wGswo"} height={videoHeight}> </video>
             <h4>
                 ¿Qué es la masa de un objeto?
             </h4>
@@ -70,36 +70,36 @@ function FallingObjectsLab() {
             <p>
                 El peso mide qué tan fuertMee la gravedad atrae la masa de un cuerpo. Generalmente se mide en Newtons.
             </p>
-            <YoutubeEmbed embedId={"jy5UDtRmbEA"} height={videoHeight}/>
+            <video embedId={"jy5UDtRmbEA"} height={videoHeight}> </video>
             <h4>
                 Caída libre
             </h4> <p>Este video lo realizaron los científicos del semillero de ciencia y turaleza del colegio Católico la Inmaculada, mientras hacían una recopilación de datos experimentales sobre la altura y tiempo en la caída de los cuerpos, al rededor de la pregunta ¿Cuál objeto cae primero?
                 Observa lo que sucedió: </p>
 
-            <YoutubeEmbed embedId={"35geCfUIGgc"} height={videoHeight}/>
+            <video embedId={"35geCfUIGgc"} height={videoHeight}> </video>
 
             <p>El filósofo griego <strong>Aristóteles (384-322) a.C</strong> Asumió que los objetos más pesados caían más rápido que los más ligeros.</p>
 
             <p> Dos mil años después, <strong>Galileo Galilei</strong> demostró que en realidad todos los objetos caen al mismo tiempo sin importar el peso de estos.
         </p>
 
-            <h3>Diseño experimental de Galileo:</h3>
+            <h4>Diseño experimental de Galileo:</h4>
             <CustomImage src={url2}/>
-            <YoutubeEmbed embedId={"ZBr8Q2ROX9s"} height={videoHeight}/>
+            <video embedId={"ZBr8Q2ROX9s"} height={videoHeight}> </video>
 
             <p>En esa época era muy difícil medir con precisión el tiempo que tarda un objeto en caer en una distancia vertical (como lo observamos en el experimento). Galileo se dio cuenta de que el movimiento de un objeto en caída libre era equivalente al movimiento de una esfera rodando por un plano inclinado. </p>
 
             <h4>
                 Experimento moderno de caida libre sin resistencia del aire
             </h4>
-            <YoutubeEmbed embedId="xzkgJUBS2tM" height={videoHeight}/>
+            <video embedId="xzkgJUBS2tM" height={videoHeight}> </video>
 
             <h4>Introducción al tratamiento de datos experimentales</h4>
             <p>Los datos experimentales son producidos por la medición, método de ensayo o diseño experimental. La medida experimental es la base del conocimiento científico. Midiendo podemos comprobar las hipótesis o teorías científicas.
             </p>
 
             <h4>Materiales</h4>
-            <p>Báscula, objetos con diferentes peso, cronómetro y mucha creatividad!</p>
+            <p>Báscula, objetos con diferentes peso, cronómetro y mucha creatividad.</p>
             <h4>Metodología</h4>
             <ol>
                 <li>Se obtiene la masa del objeto usando una báscula digital. </li>
@@ -122,7 +122,7 @@ function FallingObjectsLab() {
             <CustomImage src={tres}/>
             <CustomImage src={cuatro}/>
             <CustomImage src={cinco}/>
-            <h4 style={{fontStyle:"italic"}}>Lo hicieron muy bien científicos, felicitaciones!</h4>
+            <h4 style={{fontStyle:"italic"}}>¡Lo hicieron muy bien científicos, felicitaciones!</h4>
         </div>
     )
 }
