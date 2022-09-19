@@ -51,10 +51,10 @@ function FallingObjectsLab() {
             <p>Los objetos con masa se atraen de forma natural, a este efecto se le conoce como la gravedad. Su intensidad depende de la cantidad de masa que tienen los objetos.</p>
             <h4>Ejemplo #1:</h4><p>En este video se puede observar claramente cómo la luna gira al rededor de la tierra y a su vez la tierra gira al rededor del sol por el efecto de gravitacional.
             </p>
-
-            <YoutubeEmbed embedId={"1sj2otIjZfM"} height={videoHeight}/>
+             <a href="https://www.youtube.com/watch?v=1sj2otIjZfM&ab_channel=MooMooMathandScience">Gravedad</a>
+            
             <h4>Ejemplo #2:</h4><p>Aquí podemos observar como el sol y los planetas que lo orbitan y también giran al rededor de cuerpos con mayor gravedad, como los agujeros negros.</p>
-        
+       
             
             <YoutubeEmbed embedId={"x2bfH3wGswo"} height={videoHeight}/>
             <h4>
