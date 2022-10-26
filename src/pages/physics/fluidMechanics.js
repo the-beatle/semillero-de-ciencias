@@ -29,10 +29,10 @@ function FluidMechanics() {
 
     return (
         <div style={{maxWidth:"800px",textAlign:"justify"}}>
-            <h2>Semillero de ciencias</h2>
+            <h2 style={{textAlign:"center"}}> Mecánica de fluidos:</h2>
             <p style={{fontStyle:"italic", textAlign:"center"}}>
                 "Eureka!" -Arquímedes</p>
-            <h4 style={{textAlign:"left"}}> Mecánica de fluidos:</h4>
+           
             <p>
                 Un fluido es una sustancia que puede escurrir fácilmente y que puede cambiar de forma debido a la acción de pequeñas fuerzas. Por lo tanto, el término fluido incluye a los líquidos y a los gases.</p>
             <YoutubeEmbed embedId={"G53gvVh230U"} height={videoHeight}/>
@@ -86,6 +86,7 @@ function FluidMechanics() {
             <div>
                 <h5> Mide tus conocimientos</h5>
                 <SingleChoiceQuiz/>
+                <h5>Proyecto filtro</h5>
             </div>
         </div>
     )
