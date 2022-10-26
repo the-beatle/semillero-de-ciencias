@@ -72,7 +72,7 @@ function FallingObjectsLab() {
                 ¿Qué es el peso de un objeto?
             </h2>
             <p>
-                El peso mide qué tan fuerte es la gravedad atrae la masa de un cuerpo. Generalmente se mide en Newtons.
+                El peso mide qué tan fuerte la gravedad atrae la masa de un cuerpo. Generalmente se mide en Newtons.
             </p>
             <YoutubeEmbed embedId={"jy5UDtRmbEA"} height={videoHeight}/>
             <h2>
@@ -116,7 +116,7 @@ function FallingObjectsLab() {
             </ol>
             <h4>Resultados:</h4>
             <p>
-                La siguiente gráfica muestra los resultados del experimento de caída libre realizado por los científicos del Colegio Católico. En esta parte de la práctica, se registraron los tiempos que tardaron en caer, objetos de diferente masa desde un segundo piso.
+                La siguiente gráfica muestra los resultados del experimento de caída libre realizado por los científicos del Colegio Católico. En esta parte de la práctica, se registraron los tiempos que tardaron en caer objetos de diferente masa desde un segundo piso.
             </p>
             <h2>Representación gráfica de los datos medidos por los científicos:</h2>
             <ScatterPlot/>
