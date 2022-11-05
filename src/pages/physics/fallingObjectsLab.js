@@ -122,11 +122,15 @@ function FallingObjectsLab() {
             <ScatterPlot/>
            
             <h2>Registro fotográfico</h2>
-            <CustomImage src={uno}/>
-            <CustomImage src={dos}/>
-            <CustomImage src={tres}/>
-            <CustomImage src={cuatro}/>
-            <CustomImage src={cinco}/>
+            <table Class="styled">
+                <tr>
+            <td><CustomImage src={uno}/></td>
+            <td><CustomImage src={dos}/></td>
+            <td><CustomImage src={tres}/></td>
+            <td><CustomImage src={cuatro}/></td>
+            <td><CustomImage src={cinco}/></td>
+            </tr> 
+            </table>
             <h4 style={{fontStyle:"italic"}}>Lo hicieron muy bien científicos, felicitaciones!</h4>
         </div>
     )
