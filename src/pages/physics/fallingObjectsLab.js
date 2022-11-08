@@ -85,7 +85,7 @@ function FallingObjectsLab() {
             <p>El filósofo griego <strong>Aristóteles (384-322) a.C</strong> Asumió que los objetos más pesados caían más rápido que los más ligeros.</p>
 
             <p> Dos mil años después, <strong>Galileo Galilei</strong> demostró que en realidad todos los objetos caen al mismo tiempo sin importar el peso de estos.
-        </p>
+            </p>
 
             <h2>Diseño experimental de Galileo:</h2>
             <CustomImage src={url2}/>

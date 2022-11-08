@@ -37,7 +37,7 @@ function FluidMechanics() {
                 Un fluido es una sustancia que puede escurrir fácilmente y que puede cambiar de forma debido a la acción de pequeñas fuerzas. Por lo tanto, el término fluido incluye a los líquidos y a los gases.</p>
             <YoutubeEmbed embedId={"G53gvVh230U"} height={videoHeight}/>
             <p>
-                <strong>Palabras clave: </strong>
+                <h4>Palabras clave:</h4>
                 {sections.map(({description})=>{
                     return(
                         <span>{description.toLowerCase()+", "}</span>
@@ -66,7 +66,7 @@ function FluidMechanics() {
             <h5>Materiales</h5>
             <p>Probeta o recipiente, jabón de cocina líquido, aceite ,agua, roca, suelo.</p>
             <Disclaimer text={"¡Tu seguridad es siempre lo más importante!. Este experimento debe ser realizado bajo la supervición de un adulto"} />
-            <h5>Cómo calcular la densidad del agua, el jabón líquido y el suelo?</h5>
+            <h4>¿Cómo calcular la densidad del agua, el jabón líquido y el suelo?</h4>
             <ol>
                 <li> Registre el dato del peso de la probeta o el recipiente en gramos.</li>
                 <li>Vierta la sustancia dentro de la probeta y registre el valor de la masa obtenida en gramos.</li>
