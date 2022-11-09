@@ -13,11 +13,11 @@ function ComputerScience() {
         científico/a y lograrás contribuír a la comunidad científica desde esta
         aplicación.{" "}
       </p>
-      <h2>
+      <h3>
         {" "}
         El proceso para lograr los objetivos de este laboratorio de desarrollo
         web es el siguiente:
-      </h2>
+      </h3>
       <ol>
         <li>
           {" "}
